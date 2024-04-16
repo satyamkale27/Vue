@@ -10,6 +10,9 @@
       <p>{{ fullName() }}</p>
       <p><a :href="url" target="_blank">Google</a></p>
       <!-- v-bind:href="url" is same as :href="url" -->
+
+      <!-- <p>{{raw_url}}</p>    wrong approach security issues-->
+      <p v-html="raw_url"></p>
       <hr />
       <label>first Name</label>
       <input type="text" v-model="firstName" />
