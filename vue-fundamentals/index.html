@@ -22,7 +22,7 @@
       <input
         type="text"
         :value="lastName"
-        @input="updateLastName('Last name triggered!', $event)"
+        @input.prevent="updateLastName('Last name triggered!', $event)"
       />
       <button type="button" @click="Increment">Increment</button>
       <button type="button" @click="age--">Decrement</button>
