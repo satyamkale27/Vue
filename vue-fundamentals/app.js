@@ -15,6 +15,9 @@ const vm = Vue.createApp({
     Increment() {
       this.age++;
     },
+    updateLastName(event) {
+      this.lastName = event.target.value;
+    },
   },
 }).mount("#app");
 
