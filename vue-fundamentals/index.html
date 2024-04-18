@@ -14,11 +14,14 @@
       <!-- <p>{{raw_url}}</p>    wrong approach security issues-->
       <p v-html="raw_url"></p>
       <!-- v-html directives helps to output rawhtml content -->
+      <p>{{ age }}</p>
       <hr />
       <label>first Name</label>
       <input type="text" v-model="firstName" />
       <label>last Name</label>
       <input type="text" v-model="lastName" />
+      <button type="button" v-on:click="Increment">Increment</button>
+      <button type="button" v-on:click="age--">Decrement</button>
     </div>
     <!-- <div id="app2">{{firstName}} {{lastName}}</div> -->
 
