@@ -26,6 +26,8 @@
         :value="lastName"
         @input.prevent="updateLastName('Last name triggered!', $event)"
       />
+      <label>Age</label>
+      <input type="number" v-model.number="age" />
 
       <button type="button" @click="Increment">Increment</button>
       <button type="button" @click="age--">Decrement</button>
