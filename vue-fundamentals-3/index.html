@@ -10,6 +10,11 @@
       <p v-if="mode===1">showing v-if directive content</p>
       <p v-else-if="mode===2">v-else-if</p>
       <p v-else>v-else</p>
+      <select v-model.number="mode">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
