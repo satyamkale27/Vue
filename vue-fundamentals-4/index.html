@@ -8,15 +8,18 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="(bird, index) in birds" :class="bird">
+        <li v-for="(bird, index) in birds" :class="bird" :key="bird">
           {{bird}} - {{index}}
         </li>
       </ul>
       <hr />
       <ul>
         <li v-for="person in people">
-          <div>{{person.name}}</div>
-          <div>{{person.age}}</div>
+          <div v-for="(value, key, index) in person">
+            {{key}}: {{value}}- index: {{ index }}
+          </div>
+          <!-- here we are using loop inside loop(nested loop) frist we loop people and then we loop person -->
+          <!-- here we looped person which is object in vue we can also loop objects -->
         </li>
       </ul>
     </div>
