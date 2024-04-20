@@ -10,6 +10,9 @@
       <p v-if="mode===1">showing v-if directive content</p>
       <p v-else-if="mode===2">v-else-if</p>
       <p v-else>v-else</p>
+      <i v-show="mode==1">v-show</i>
+      <!-- v-show id diffrent from v-if, v-else-if, v-else directive -->
+      <!-- in v-show if the condition gets false the element does not get removed insted it is hidden bys css display:none -->
       <select v-model.number="mode">
         <option value="1">v-if</option>
         <option value="2">v-else-if</option>
