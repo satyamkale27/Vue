@@ -7,6 +7,14 @@ Vue.createApp({
       rotateZ: 0,
     };
   },
+  methods: {
+    reset() {
+      this.perspective = 100;
+      this.rotateX = 0;
+      this.rotateY = 0;
+      this.rotateZ = 0;
+    },
+  },
   computed: {
     rotationStyles() {
       return {
