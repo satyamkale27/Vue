@@ -13,5 +13,10 @@ Vue.createApp({
         transform: `rotateX(${this.rotateX}deg) rotateY(${this.rotateY}deg) rotateZ(${this.rotateZ}deg)`,
       };
     },
+    perspectiveStyles() {
+      return {
+        perspective: this.perspective + "px",
+      };
+    },
   },
 }).mount("#app");

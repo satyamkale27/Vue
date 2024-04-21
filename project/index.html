@@ -17,10 +17,10 @@
             <label>rotateX: {{rotateX}}deg; </label>
             <input type="range" min="-180" max="180" v-model="rotateX" />
 
-            <label>rotateY: {{rotateY}}; </label>
+            <label>rotateY: {{rotateY}}deg; </label>
             <input type="range" min="-180" max="180" v-model="rotateY" />
 
-            <label>rotateZ: {{rotateZ}}; </label>
+            <label>rotateZ: {{rotateZ}}deg; </label>
             <input type="range" min="-180" max="180" v-model="rotateZ" />
 
             <button type="button">Reset</button>
@@ -28,7 +28,7 @@
           </div>
         </section>
         <section class="output">
-          <div class="box-container">
+          <div class="box-container" :style="perspectiveStyles">
             <div class="box" :style="rotationStyles"></div>
           </div>
         </section>
