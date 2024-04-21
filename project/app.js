@@ -14,6 +14,10 @@ Vue.createApp({
       this.rotateY = 0;
       this.rotateZ = 0;
     },
+    async copy() {
+      let text = `transform:${this.rotationStyles.transform};perspective:${this.perspectiveStyles.perspective};`;
+      await navigator.clipboard.writeText(text);
+    },
   },
   computed: {
     rotationStyles() {
