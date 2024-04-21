@@ -17,6 +17,7 @@ Vue.createApp({
     async copy() {
       let text = `transform:${this.rotationStyles.transform};perspective:${this.perspectiveStyles.perspective};`;
       await navigator.clipboard.writeText(text);
+      // clipboard is an api that allows you to copy text to the clipboard for api async await is used
     },
   },
   computed: {
