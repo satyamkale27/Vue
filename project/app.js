@@ -7,4 +7,11 @@ Vue.createApp({
       rotateZ: 0,
     };
   },
+  computed: {
+    rotationStyles() {
+      return {
+        transform: `rotateX(${this.rotateX}deg) rotateY(${this.rotateY}deg) rotateZ(${this.rotateZ}deg)`,
+      };
+    },
+  },
 }).mount("#app");
