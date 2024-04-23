@@ -3,7 +3,8 @@ h1 {
 }
 h1:hover {
   color: darken(
-
+    #cc3244,
+    15%
   ); // returns a new color with darker shade, possible because of saas, normal css cant do this //
 }
 :root {
