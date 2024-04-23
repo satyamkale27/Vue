@@ -1,21 +1,22 @@
-let vm = Vue.createApp({
+let vm = Vue.createApp({});
+vm.component("hello", {
+  template: `<h1>{{ message }} </h1>`,
   data() {
     return {
       message: "Hello world!",
     };
   },
-  template: `{{message}}`,
 });
 vm.mount("#app");
 // mounting seprately to look clean and easy to read //
 
-let vm2 = Vue.createApp({
-  data() {
-    return {
-      message: "Hello world!",
-    };
-  },
-  render() {
-    return Vue.h("h1", this.message);
-  },
-}).mount("#app2");
+// let vm2 = Vue.createApp({
+//   data() {
+//     return {
+//       message: "Hello world!",
+//     };
+//   },
+//   render() {
+//     return Vue.h("h1", this.message);
+//   },
+// }).mount("#app2");
