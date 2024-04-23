@@ -1,3 +1,11 @@
+h1 {
+  color: #cc3244;
+}
+h1:hover {
+  color: darken(
+
+  ); // returns a new color with darker shade, possible because of saas, normal css cant do this //
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
